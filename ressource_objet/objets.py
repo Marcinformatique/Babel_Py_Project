@@ -1,3 +1,4 @@
+from ressource_fonction.fonction import*
 NB_CHAR = 80
 NB_LIGNES = 40
 NB_PAGES = 410
