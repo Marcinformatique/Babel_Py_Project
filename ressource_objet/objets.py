@@ -8,4 +8,4 @@ NB_HEXAGONES = 2
 
 class Livres:
     def __init__(self):
-        self.contenu=[[]] # 1ère dimension de la liste : les différentes pages | 2e dimension : les lignes contenant elle même une chaine de 80 caractères
+        self.contenu=[[]] # 1ère dimension de la liste : les différentes pages | 2e dimension : les lignes contenant elle même une chaine de 80 caractères.
