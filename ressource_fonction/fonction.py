@@ -1,11 +1,8 @@
-from ressource_objet.objets import*
 from random import randint
 
-print("dd")
-
 def carac():
-    """ Retourne un caractère aléatoire """
-    n = randint(97, 125) # a -> 97
+    """ Retourne un caractère aléatoire (Les 26 lettres minuscule de l'alphabet + espace + 2 caractères de ponctuation : '.' et ',')"""
+    n = randint(97, 125)
     if n == 123:
         return " "
     elif n == 124:
@@ -14,5 +11,3 @@ def carac():
         return ","
     else:
         return chr(n)
-
-print(carac())
