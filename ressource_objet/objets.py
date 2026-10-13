@@ -4,7 +4,7 @@ NB_LIGNES = 40
 NB_PAGES = 410
 NB_LIVRES = 32
 NB_ETAGERES = 5
-NB_HEXAGONES = 2
+NB_HEXAGONES = 1
 class Livres:
     def __init__(self):
         self.contenu=[[""]*NB_LIGNES]*NB_PAGES # 1ère dimension de la liste : les différentes pages | 2e dimension : les lignes contenant elle même une chaine de 80 caractères.
@@ -27,3 +27,7 @@ class Etageres:
     def __init__(self):
         self.contenu = [Livres()]
         self.contenu = []
+    def initEtageres(self):
+        for livre in range(NB_LIVRES):
+            self.contenu += [Livres()]
+            self.contenu[livre].add_Contenu()
