@@ -18,4 +18,5 @@ def create_And_Init_Babel(nbHexa: int) -> list[Hexagone]:
     l = []
     for i in range(nbHexa):
         l += [Hexagone()]
+        l[-1].initExagone()
     return l
