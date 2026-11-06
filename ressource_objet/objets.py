@@ -17,12 +17,12 @@ class Livres:
                     self.contenu[page][ligne] += carac()
                     
     def print_page(self, no_page: int):
-        """ Afficher le contenu d'une page """
+        """ Afficher le contenu d'une page (1ère page = 1)"""
         for ligne in range(NB_LIGNES):
             for caracter in range(NB_CHAR):
-                print(self.contenu[no_page][ligne][caracter], end="")
+                print(self.contenu[no_page-1][ligne][caracter], end="")
             print()
-        print(f"---------------- Page {no_page} / {NB_PAGES} ----------------")
+        print(f"---------------- Page {no_page-1} / {NB_PAGES} ----------------")
  
 class Etageres:
     def __init__(self):
