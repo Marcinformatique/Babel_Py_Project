@@ -22,7 +22,7 @@ class Livres:
             for caracter in range(NB_CHAR):
                 print(self.contenu[no_page-1][ligne][caracter], end="")
             print()
-        print(f"---------------- Page {no_page-1} / {NB_PAGES} ----------------")
+        print(f"---------------- Page {no_page} / {NB_PAGES} ----------------")
  
 class Etageres:
     def __init__(self):
