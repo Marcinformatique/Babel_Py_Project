@@ -12,11 +12,11 @@ def carac():
     else:
         return chr(n)
     
-from ressource_objet.objets import Hexagone
+from ressource_objet.objets import Hexagone, NB_HEXAGONES
     
-def create_And_Init_Babel(nbHexa: int) -> list[Hexagone]:
+def create_And_Init_Babel() -> list[Hexagone]:
     l = []
-    for i in range(nbHexa):
+    for i in range(NB_HEXAGONES):
         l += [Hexagone()]
         l[-1].initExagone()
     return l
