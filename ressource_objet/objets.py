@@ -39,6 +39,7 @@ class Hexagone:
         self.contenu = [Etageres()]
         self.contenu = []
     def initExagone(self):
+        """ Initialiser un hexagone (remplir celui-ci et également initialiser le contenu des étagères => ce qui va donc initialiser les livres) """
         for i in range(NB_ETAGERES):
             self.contenu += [Etageres()]
             self.contenu[-1].initEtageres()
