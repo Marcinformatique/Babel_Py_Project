@@ -39,6 +39,6 @@ class Hexagone:
         self.contenu = [Etageres()]
         self.contenu = []
     def initExagone(self):
-        for i in range(5):
+        for i in range(NB_ETAGERES):
             self.contenu += [Etageres()]
             self.contenu[-1].initEtageres()
