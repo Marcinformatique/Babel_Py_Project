@@ -20,3 +20,4 @@ def create_And_Init_Babel() -> list[Hexagone]:
         l += [Hexagone()]
         l[-1].initExagone()
     return l
+
